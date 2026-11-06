@@ -1,0 +1,3 @@
+libAPSClient-cmd-jni-extension.oplus.so
+libOplusStringJNI-extension.oplus.so
+libapssuspend-jni.oplus.so

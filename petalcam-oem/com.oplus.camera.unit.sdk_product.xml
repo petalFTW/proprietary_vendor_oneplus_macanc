@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- PetalCam's way into the oem pipeline, no OplusCamera on board -->
+<permissions>
+    <library name="com.oplus.camera.unit.sdk" file="/product/framework/com.oplus.camera.unit.sdk.jar" />
+    <library name="com.oplus.camera.unit.sdk.adapter" file="/product/framework/com.oplus.camera.unit.sdk.adapter.jar" />
+    <!-- the app only asks for the standard lib, this drags the oplus jars in behind it -->
+    <library name="androidx.camera.extensions.impl" file="/system_ext/framework/androidx.camera.extensions.impl.jar"
+        dependency="com.oplus.camera.unit.sdk:com.oplus.camera.unit.sdk.adapter" />
+</permissions>

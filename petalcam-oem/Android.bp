@@ -1,0 +1,438 @@
+// hand kept, setup-makefiles has no idea this folder exists
+
+dex_import {
+    name: "com.oplus.camera.unit.sdk",
+    jars: ["product/framework/com.oplus.camera.unit.sdk.jar"],
+    product_specific: true,
+}
+
+dex_import {
+    name: "com.oplus.camera.unit.sdk.adapter",
+    jars: ["product/framework/com.oplus.camera.unit.sdk.adapter.jar"],
+    product_specific: true,
+}
+
+dex_import {
+    // frameworks/ex already owns the plain name
+    name: "petalcam-camera-extensions-impl",
+    stem: "androidx.camera.extensions.impl",
+    jars: ["system_ext/framework/androidx.camera.extensions.impl.jar"],
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libAPSClient-alog-jni",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["product/lib64/libAPSClient-alog-jni.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libAPSClient-cmd-jni",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["product/lib64/libAPSClient-cmd-jni.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libAPSClient-jni",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["product/lib64/libAPSClient-jni.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libAncFilter_jni",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["product/lib64/libAncFilter_jni.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libAncHumBokeh-jni",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["product/lib64/libAncHumBokeh-jni.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libAncHumanDoubleExposure-jni",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["product/lib64/libAncHumanDoubleExposure-jni.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libAncHumanRetain-jni_v2",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["product/lib64/libAncHumanRetain-jni_v2.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libAncHumanSegFigureFusion-jni",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["product/lib64/libAncHumanSegFigureFusion-jni.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libAncHumanVideo-jni",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["product/lib64/libAncHumanVideo-jni.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libApsAICompositionJni",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["product/lib64/libApsAICompositionJni.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libApsFaceBeautyPreviewProductJni",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["product/lib64/libApsFaceBeautyPreviewProductJni.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libApsSuperEISPreviewJni",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["product/lib64/libApsSuperEISPreviewJni.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libCombineLut",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["product/lib64/libCombineLut.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libCombineLutJni",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["product/lib64/libCombineLutJni.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libHdrTransform-platform-jni",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["product/lib64/libHdrTransform-platform-jni.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libHeifEncoderWrapper",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["product/lib64/libHeifEncoderWrapper.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libJniMetaTransform",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["product/lib64/libJniMetaTransform.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libNativeWinBuffExchange",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["product/lib64/libNativeWinBuffExchange.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libOplusBlurPreviewJNI",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["product/lib64/libOplusBlurPreviewJNI.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libOplusStringJNI",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["product/lib64/libOplusStringJNI.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libAPSClient-cmd-jni-extension.oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["system_ext/lib64/libAPSClient-cmd-jni-extension.oplus.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libOplusStringJNI-extension.oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["system_ext/lib64/libOplusStringJNI-extension.oplus.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libapssuspend-jni.oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["system_ext/lib64/libapssuspend-jni.oplus.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    system_ext_specific: true,
+}
+
+prebuilt_etc {
+    name: "com.oplus.camera.unit.sdk_product.xml",
+    src: "com.oplus.camera.unit.sdk_product.xml",
+    sub_dir: "permissions",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "public.libraries-oplus.txt",
+    src: "public.libraries-oplus.txt",
+    system_ext_specific: true,
+}
+
+// oplus' wrapper round the qcom hal, ro.hardware.camera points here. it's what publishes
+// supported.cameraid.type, without it the sdk's camera table stays empty
+cc_prebuilt_library_shared {
+    name: "camera.oemlayer.v2",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["odm/lib64/hw/camera.oemlayer.v2.so"],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    check_elf_files: false,
+    prefer: true,
+    device_specific: true,
+}
+
+// the sdk's aps configs are encrypted, this decodes them. stock loads it through sphal
+cc_prebuilt_library_shared {
+    name: "libOplusSecurity",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["odm/lib64/libOplusSecurity.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    device_specific: true,
+}
